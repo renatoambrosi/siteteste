@@ -53,19 +53,33 @@ Landing page profissional para o **Teste de Prosperidade** de Suellen Seragi - u
 - ✅ Navegação por teclado
 - ✅ ARIA labels onde necessário
 
-## 🎨 Paleta de Cores
+## 🎨 Paletas de Cores
 
+### Tema Escuro (index.html, style.css)
 - **Primária Turquesa**: `#4ecdc4`
 - **Secundária Verde**: `#44a08d`
 - **Roxo Gradiente**: `#667eea` → `#764ba2`
 - **Dark Background**: `#1a1a2e`, `#16213e`, `#0f3460`
 - **Texto**: `rgba(255, 255, 255, 0.9)`
 
+### Tema Claro (index2.html, style2.css) ✨ NOVO
+- **Primário Dourado**: `#D4AF37`, `#FFD700`
+- **Dourado Escuro**: `#B8860B`
+- **Background Branco**: `#ffffff`, `#f8f8f8`, `#f5f5f5`
+- **Texto**: `#2c2c2c`
+- **Header Dourado**: Gradiente `#D4AF37` → `#FFD700`
+
 ## 🔗 Links Importantes
 
-- **URL do Teste**: https://teste.suellenseragi.com.br/
+- **URL do Teste**: https://mpteste.suellenseragi.com.br/
 - **Logo**: `/images/logo-suellen-seragi.png`
 - **Foto Criadora**: URL externa hospedada
+
+## 🌐 Versões Disponíveis
+
+1. **index.html** - Versão principal (português, tema claro branco & dourado)
+2. **index-dark.html** - Versão alternativa original (tema escuro turquesa/roxo)
+3. **index-en.html** - Versão em inglês "The True Mind Test" (tradução completa)
 
 ## 📱 Responsividade
 
@@ -92,7 +106,9 @@ Landing page profissional para o **Teste de Prosperidade** de Suellen Seragi - u
 
 ```
 /
-├── index.html              # Página principal
+├── index.html              # Página principal (português - tema claro dourado)
+├── index-dark.html         # Página alternativa (tema escuro original)
+├── index-en.html           # Página em inglês "The True Mind Test"
 ├── favicon.svg             # Ícone SVG
 ├── favicon.ico             # Ícone fallback
 ├── manifest.json           # PWA manifest
@@ -100,7 +116,8 @@ Landing page profissional para o **Teste de Prosperidade** de Suellen Seragi - u
 ├── sitemap.xml             # Mapa do site
 ├── README.md               # Documentação
 ├── css/
-│   └── style.css          # Estilos principais
+│   ├── style.css          # Estilos tema escuro original
+│   └── style2.css         # Estilos principais atuais (tema claro dourado)
 ├── js/
 │   └── script.js          # JavaScript interativo
 └── images/
@@ -123,7 +140,7 @@ Landing page profissional para o **Teste de Prosperidade** de Suellen Seragi - u
 ## 🎯 Conversão & CTA
 
 - **Botões CTA** em 8 locais estratégicos
-- **Cor primária**: Gradiente turquesa-verde
+- **Cor primária**: Gradiente dourado (taupe → ouro)
 - **Preço**: R$19 (destacado)
 - **Urgência**: "Resultado Imediato"
 - **Social Proof**: 7 relatos reais
@@ -151,6 +168,33 @@ Landing page profissional para o **Teste de Prosperidade** de Suellen Seragi - u
 12. ✅ Card roxo elegante no lugar rosa/turquesa
 13. ✅ Foto da Suellen na seção criadores
 14. ✅ Texto criadores alinhado esquerda (desktop) / centro (mobile)
+15. ✅ **Versão em inglês completa** (index-en.html) - "The True Mind Test"
+16. ✅ **Tema claro consolidado** como página principal (index.html + style2.css) na paleta branco e dourado
+17. ✅ **Header dourado** alinhado ao novo tema claro principal
+18. ✅ **Correção do scroll horizontal** em mobile (overflow-x: hidden)
+19. ✅ Ajuste dos grids de depoimentos e benefícios para evitar overflow lateral no tema claro
+20. ✅ CTA fixo do header com texto branco para melhor contraste
+21. ✅ Gradiente animado dourado → laranja → amarelo na frase "Travando Sua Prosperidade"
+22. ✅ Ícones das features da hero harmonizados com tom dourado elegante
+23. ✅ Seção "Você já se perguntou..." redesenhada com paleta dourada e CTA alinhado ao tema
+24. ✅ Sombra pulsante e hover dos CTAs atualizadas para dourado
+25. ✅ Textos do tema claro ajustados para tom taupe (rgb(122,114,104)) em vez de preto
+26. ✅ Seção "Você já se perguntou..." com fundo cinza-claro, cards neutros (rgb(245,245,245) + borda dourada) e CTA branco exclusivo
+27. ✅ Detalhes azulados convertidos para tom taupe dourado (#d1ad6f) na citação e botão voltar ao topo
+28. ✅ Loading e cards de features harmonizados com dourado suave (ajuste fino dos tons) + CTA sem efeito magnético
+29. ✅ Seção "Instruções Sobre o Teste" com fundo creme suave (atualizado: #f7f3ed)
+30. ✅ Texto do loading ajustado para branco
+31. ✅ Cartões de padrões emocionais com creme #f7f3ed e sombra dourada
+32. ✅ Seção de relatos harmonizada (textos taupe, aspas e hover dourados)
+33. ✅ Bordas dos depoimentos com gradiente dourado contínuo usando técnica padding-box/border-box para preservar cantos arredondados
+34. ✅ Seções "Sobre os Criadores", "Como Funciona" e "Benefícios" redesenhadas em degradês creme/dourado alinhados ao tema claro
+35. ✅ CTA final refeito com gradiente dourado e conteúdo (triggers de confiança, destaques) com ícones em branco
+36. ✅ Ícones, setas, links e elementos interativos remanescentes atualizados para tons dourados/taupe (sem azul ou verde)
+37. ✅ Textos-chave de gatilho (benefícios e prova social) em branco para alto contraste nos degradês dourados
+38. ✅ Todas as logos clicáveis (header e footer) apontando para https://www.suellenseragi.com.br/
+39. ✅ CTAs da landing page direcionando para https://mpteste.suellenseragi.com.br/
+40. ✅ Footer redesenhado com degradê taupe-âmbar escuro (sem preto) + tipografia clara e links dourados
+41. ✅ Card "O que realmente nos limita" sem borda/margem externa e com sombra padrão dourada intensificada (ref. print)
 
 ## 📞 Contato
 
