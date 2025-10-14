@@ -1,0 +1,121 @@
+/* CORES DOURADAS SUAVES E REFINADAS - FORÇADO */
+
+/* Header - Tom dourado suave e elegante */
+.header {
+    background: linear-gradient(90deg, #C9A961 0%, #D4B896 100%) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.3) !important;
+}
+
+/* Botões - Tom dourado suave */
+.cta-btn,
+.cta-primary,
+button[class*="cta"] {
+    background: linear-gradient(45deg, #C9A961, #D4B896) !important;
+    color: #ffffff !important;
+}
+
+/* Botão da Hero - Texto branco */
+.hero .cta-btn {
+    color: #ffffff !important;
+}
+
+/* CTA fixo do header - texto branco */
+.header .cta-header {
+    color: #ffffff !important;
+}
+
+.cta-secondary {
+    background: linear-gradient(45deg, #B8A482, #C9A961) !important;
+}
+
+/* Loading Screen - Tom dourado suave */
+.loading-screen {
+    background: linear-gradient(135deg, #C9A961 0%, #D4B896 100%) !important;
+}
+
+/* Scrollbar - Tom dourado suave */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #C9A961, #D4B896) !important;
+}
+
+/* Texto Gradiente - Dourado → Laranja → Amarelo com animação */
+.gradient-text {
+    background: linear-gradient(120deg, #d4af37, #ff8c00, #ffd700) !important;
+    background-size: 300% 300% !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    animation: gradient-shift 4s ease-in-out infinite !important;
+}
+
+/* Hero Orbs - Tons dourados suaves */
+.orb-1 {
+    background: radial-gradient(circle, #D4B896, transparent) !important;
+}
+
+.orb-2 {
+    background: radial-gradient(circle, #C9A961, transparent) !important;
+}
+
+.orb-3 {
+    background: radial-gradient(circle, #B8A482, transparent) !important;
+}
+
+/* Roda da Prosperidade - Tons bege/dourado suaves */
+.prosperity-wheel::before {
+    background: conic-gradient(
+        from 0deg,
+        #D9C4A0 0deg 60deg,
+        #D4B896 60deg 120deg,
+        #C9B591 120deg 180deg,
+        #C9A961 180deg 240deg,
+        #B8A482 240deg 300deg,
+        #C9B591 300deg 360deg
+    ) !important;
+    box-shadow: 0 0 50px rgba(201, 169, 97, 0.4), 0 0 100px rgba(201, 169, 97, 0.2) !important;
+}
+
+/* Elementos flutuantes - Tons suaves */
+.star-1, .star-3 {
+    background: linear-gradient(45deg, #C9A961, #D4B896) !important;
+}
+
+.star-2 {
+    background: #C9A961 !important;
+}
+
+.floating-element {
+    background: rgba(201, 169, 97, 0.2) !important;
+}
+
+/* Body e Backgrounds - Branco/Claro */
+body {
+    background: #ffffff !important;
+    color: rgb(122, 114, 104) !important;
+}
+
+.hero {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 50%, #f5f5f5 100%) !important;
+}
+
+/* Remover filtros */
+* {
+    filter: none !important;
+}
+
+body, html {
+    filter: none !important;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
