@@ -2,16 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Initialize AOS (Animate On Scroll)
-    AOS.init({
-        duration: 1000,
-        easing: 'ease-in-out-cubic',
-        once: true,
-        offset: 100
-    });
-
-    // Loading Screen Animation
+    // Loading Screen Animation (iniciar ANTES do AOS)
     initLoadingScreen();
+    
+    // Initialize AOS DEPOIS do loading (dentro do setTimeout do loading)
+    // Movido para dentro da função initLoadingScreen
     
     // Floating Elements Animation
     initFloatingElements();
@@ -55,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Loading Screen Animation
 function initLoadingScreen() {
+    // Bloquear scroll do body durante loading
+    document.body.classList.add('loading');
+    
     const loadingScreen = document.getElementById('loading');
     const prosperitySymbol = loadingScreen.querySelector('.prosperity-symbol');
     
@@ -69,6 +67,24 @@ function initLoadingScreen() {
     setTimeout(() => {
         clearInterval(symbolInterval);
         loadingScreen.classList.add('hidden');
+        
+        // Aguardar transição do loading screen antes de liberar
+        setTimeout(() => {
+            // Liberar scroll do body
+            document.body.classList.remove('loading');
+            document.body.style.position = '';
+            document.body.style.width = '';
+            document.body.style.overflow = '';
+            
+            // Inicializar AOS SOMENTE DEPOIS que o loading terminar
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out-cubic',
+                once: true,
+                offset: 100,
+                disable: 'mobile' // DESABILITAR AOS NO MOBILE
+            });
+        }, 500);
         
         // Start main animations
         setTimeout(() => {
@@ -374,7 +390,7 @@ function initScrollProgress() {
         left: 0;
         width: 0%;
         height: 3px;
-        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        background: linear-gradient(45deg, #BFA168, #D4BB8A, #FFD700);
         z-index: 10001;
         transition: width 0.1s ease;
     `;
