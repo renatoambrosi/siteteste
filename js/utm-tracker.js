@@ -141,10 +141,9 @@
     // INICIALIZAÇÃO
     // ========================================
     
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', processLinks);
-    } else {
-        processLinks();
-    }
+    window.addEventListener('load', () => {
+        setTimeout(processLinks, 200);
+    });
+
     
 })();
